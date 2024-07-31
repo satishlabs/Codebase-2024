@@ -1,0 +1,26 @@
+	//http://localhost:8080/api/payments/process
+	Request:
+	{
+	    "vendor": "visa",
+	    "amount": "20000",
+	    "currency": "Rs",
+	    "cardNumber": "98083910202",
+	    "expiryDate": "31-07-2025",
+	    "cvv": "231"
+	}
+	
+	Response:{
+	    "transcationId": "VISA1234",
+	    "status": "Success",
+	    "message": "Payment processed successfully with Visa"
+	}
+	
+	
+	
+	//http://localhost:8080/api/payments/status/visa/VISA1234
+		
+	Response:{
+		"transcationId": "VISA1234",
+		"status": "Completed",
+		"message": "Payment status retrieved successfully for Visa"
+	}
